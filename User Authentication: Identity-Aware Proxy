@@ -16,7 +16,7 @@ cat > details.json << EOF
   Application home page: $LINK
   Application privacy Policy link: $LINK/privacy
   Authorized domains: $LINKU
-  Developer Contact Information: qwikcloud@gmail.com
+  Developer Contact Information: techvinechannel@gmail.com
 }
 EOF
 cat details.json
