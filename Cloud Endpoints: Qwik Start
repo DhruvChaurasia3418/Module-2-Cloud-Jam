@@ -1,0 +1,22 @@
+gcloud auth list
+gcloud config list project
+gsutil cp gs://spls/gsp164/endpoints-quickstart.zip .
+unzip endpoints-quickstart.zip
+cd endpoints-quickstart
+cd scripts
+./deploy_api.sh
+./deploy_app.sh
+./query_api.sh
+./query_api.sh JFK
+./generate_traffic.sh
+./deploy_api.sh ../openapi_with_ratelimit.yaml
+./deploy_app.sh
+
+
+
+export API_KEY=
+
+
+./query_api_with_key.sh $API_KEY
+./generate_traffic_with_key.sh $API_KEY
+./query_api_with_key.sh $API_KEY
